@@ -62,11 +62,13 @@ class User implements UserInterface
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Organisation")
+     * @ORM\Column(nullable=true)
      */
     private $lastOrganisationLoggedIn;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Project")
+     * @ORM\Column(nullable=true)
      */
     private $lastProjectUsed;
 
